@@ -36,7 +36,7 @@
         <dependency> <!--interfaces for JAX-Ws -->
             <groupId>jakarta.xml.ws</groupId>
             <artifactId>jakarta.xml.ws-api</artifactId>
-            <version>3.0.0</version>
+            <version>4.0.0</version>
         </dependency>
         <dependency> <!--JAX-WS runtime implementation - Metro-->
             <groupId>org.glassfish.metro</groupId>
@@ -52,9 +52,15 @@
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
-            <version>6.0.0</version>
+            <version>5.0.0</version>
             <scope>provided</scope>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-catalina -->
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-catalina</artifactId>
+            <version>9.0.98</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>
