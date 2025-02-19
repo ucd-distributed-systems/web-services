@@ -1,6 +1,6 @@
 package service;
 
-import jakarta.xml.ws.Endpoint;
+import javax.xml.ws.Endpoint;
 import service.auldfellas.AFQService;
 
 
