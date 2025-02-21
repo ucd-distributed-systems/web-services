@@ -9,8 +9,8 @@
     <packaging>jar</packaging>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -19,6 +19,24 @@
             <groupId>quoco-ws</groupId>
             <artifactId>core</artifactId>
             <version>0.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>quoco-ws</groupId>
+            <artifactId>auldfellas</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>quoco-ws</groupId>
+            <artifactId>broker</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>quoco-ws</groupId>
+            <artifactId>dodgygeezers</artifactId>
+            <version>0.0.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

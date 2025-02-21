@@ -1,8 +1,8 @@
 package service;
 
+import jakarta.xml.ws.Endpoint;
 import service.girlsallowed.GAQService;
 
-import javax.xml.ws.Endpoint;
 
 public class Main {
     public static void main(String[] args) {

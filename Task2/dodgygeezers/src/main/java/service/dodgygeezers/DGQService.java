@@ -1,12 +1,11 @@
 package service.dodgygeezers;
 
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
+import jakarta.jws.soap.SOAPBinding;
 import service.core.AbstractQuotationService;
 import service.core.ClientInfo;
 import service.core.Quotation;
-
-import javax.jws.WebMethod;
-import javax.jws.WebService;
-import javax.jws.soap.SOAPBinding;
 
 
 @WebService(name="QuotationService",

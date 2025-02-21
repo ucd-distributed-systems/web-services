@@ -1,3 +1,5 @@
+import jakarta.xml.ws.Endpoint;
+import jakarta.xml.ws.Service;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import service.core.ClientInfo;
@@ -6,8 +8,7 @@ import service.core.QuotationService;
 import service.dodgygeezers.DGQService;
 
 import javax.xml.namespace.QName;
-import javax.xml.ws.Endpoint;
-import javax.xml.ws.Service;
+
 import java.net.URL;
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;

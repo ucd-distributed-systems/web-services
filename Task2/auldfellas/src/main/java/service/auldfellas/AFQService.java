@@ -1,13 +1,11 @@
 package service.auldfellas;
 
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
+import jakarta.jws.soap.SOAPBinding;
 import service.core.AbstractQuotationService;
 import service.core.ClientInfo;
 import service.core.Quotation;
-import javax.jws.WebService;
-import javax.jws.WebMethod;
-import javax.jws.soap.SOAPBinding;
-import javax.jws.soap.SOAPBinding.Style;
-import javax.jws.soap.SOAPBinding.Use;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.
@@ -18,7 +16,7 @@ import javax.jws.soap.SOAPBinding.Use;
 @WebService(name="QuotationService",
 		targetNamespace="http://core.service/",
 		serviceName="QuotationService")
-@SOAPBinding(style = Style.RPC, use=Use.LITERAL)
+@SOAPBinding(style = SOAPBinding.Style.RPC, use= SOAPBinding.Use.LITERAL)
 public class AFQService extends AbstractQuotationService {
 	// All references are to be prefixed with an AF (e.g. AF001000)
 	public static final String PREFIX = "AF";

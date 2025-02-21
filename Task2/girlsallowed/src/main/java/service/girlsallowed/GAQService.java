@@ -1,19 +1,18 @@
 package service.girlsallowed;
 
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
+import jakarta.jws.soap.SOAPBinding;
 import service.core.AbstractQuotationService;
 import service.core.ClientInfo;
 import service.core.Quotation;
 
-import javax.jws.WebMethod;
-import javax.jws.WebService;
-import javax.jws.soap.SOAPBinding;
-import javax.jws.soap.SOAPBinding.Style;
-import javax.jws.soap.SOAPBinding.Use;
+
 
 @WebService(name="QuotationService",
         targetNamespace="http://core.service/",
         serviceName="QuotationService")
-@SOAPBinding(style= Style.RPC, use=Use.LITERAL)
+@SOAPBinding(style= SOAPBinding.Style.RPC, use= SOAPBinding.Use.LITERAL)
 public class GAQService extends AbstractQuotationService {
     // All references are to be prefixed with an GA (e.g. GA001000)
     public static final String PREFIX = "GA";
