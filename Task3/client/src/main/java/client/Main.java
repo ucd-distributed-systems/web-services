@@ -15,6 +15,7 @@ import javax.xml.namespace.QName;
 - create images of all containers
 - port map the broker to the host machine so that the client can access
 - create a docker network between the broker and quotation services so they can interact
+- docker compose should create a network by default
 */
 
 public class Main {

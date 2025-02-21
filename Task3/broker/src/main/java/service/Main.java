@@ -27,10 +27,11 @@ public class Main {
     }
 
     private static List<QuotationService> createQuotationStubs(List<String> urls) throws Exception {
-        try {
-            List<QuotationService> quotationServices = new ArrayList<>();
+        List<QuotationService> quotationServices = new ArrayList<>();
 
-            for (String url : urls) {
+        for (String url : urls) {
+            // add try catch here and if there is an error, skip to next service
+            try {
                 URL wsdlUrl = new URL(url);
                 QName serviceName =
                         new QName("http://core.service/", "QuotationService");
@@ -40,12 +41,10 @@ public class Main {
                 QuotationService quotationService =
                         service.getPort(portName, QuotationService.class);
                 quotationServices.add(quotationService);
-                return quotationServices;
+            } catch (Exception e) {
+                System.out.println("Failed to connect to quotation service at: " + url);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
         }
-        return Collections.emptyList();
+        return quotationServices;
     }
 }
