@@ -13,7 +13,6 @@ import service.core.ClientInfo;
 import service.core.Quotation;
 import service.core.QuotationService;
 
-
 import javax.xml.namespace.QName;
 
 /*
@@ -22,11 +21,13 @@ import javax.xml.namespace.QName;
  * @author Rem
  *
  */
-@WebService(name="QuotationService",
+@WebService(name="BrokerService",
         targetNamespace="http://core.service/",
-        serviceName="QuotationService")
-@SOAPBinding(style= SOAPBinding.Style.RPC, use= SOAPBinding.Use.LITERAL)
+        serviceName="BrokerService")
+@SOAPBinding(style= SOAPBinding.Style.DOCUMENT, use= SOAPBinding.Use.LITERAL)
 public class LocalBrokerService implements BrokerService {
+    private List<QuotationService> quotationServices;
+
     @WebMethod
     @Override
     public LinkedList<Quotation> getQuotations(ClientInfo info) throws Exception {
@@ -36,21 +37,29 @@ public class LocalBrokerService implements BrokerService {
         serviceURLs.add("http://0.0.0.0:9002/quotations?wsdl");
         serviceURLs.add("http://0.0.0.0:9003/quotations?wsdl");
 
-        for (String name : serviceURLs) {
-            if (name.contains("quotations")) {
-                // create quotation services
-                // generation quotation
-                URL wsdlUrl = new URL(name);
-                QName serviceName =
-                        new QName("http://core.service/", "QuotationService");
-                Service service = Service.create(wsdlUrl, serviceName);
-                QName portName =
-                        new QName("http://core.service/", "QuotationServicePort");
-                QuotationService quotationService =
-                        service.getPort(portName, QuotationService.class);
-                quotations.add(quotationService.generateQuotation(info));
-            }
+//        for (String name : serviceURLs) {
+//            if (name.contains("quotations")) {
+//                // create quotation services
+//                // generation quotation
+//                URL wsdlUrl = new URL(name);
+//                QName serviceName =
+//                        new QName("http://core.service/", "QuotationService");
+//                Service service = Service.create(wsdlUrl, serviceName);
+//                QName portName =
+//                        new QName("http://core.service/", "QuotationServicePort");
+//                QuotationService quotationService =
+//                        service.getPort(portName, QuotationService.class);
+//                quotations.add(quotationService.generateQuotation(info));
+//            }
+//        }
+        for (QuotationService quotationService : quotationServices) {
+            quotations.add(quotationService.generateQuotation(info));
         }
+
         return quotations;
+    }
+
+    public LocalBrokerService(List<QuotationService> quotationServices) {
+        this.quotationServices = quotationServices;
     }
 }

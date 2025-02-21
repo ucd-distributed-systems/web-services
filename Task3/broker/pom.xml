@@ -19,7 +19,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
+                <version>3.5.0</version>
                 <configuration>
                     <mainClass>service.Main</mainClass>
                 </configuration>
@@ -55,6 +55,12 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.24.3</version>
+        </dependency>
+        <dependency>
+            <groupId>quoco-ws</groupId>
+            <artifactId>auldfellas</artifactId>
+            <version>0.0.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>

@@ -1,13 +1,51 @@
 package service;
 
 import jakarta.xml.ws.Endpoint;
+import jakarta.xml.ws.Service;
 import service.broker.LocalBrokerService;
+import service.core.QuotationService;
+
+import javax.xml.namespace.QName;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        Endpoint.publish("http://localhost:9000/broker", new LocalBrokerService());
-        // list of strings representing the quotation services urls
-        // retrieve the web services associated with the urls
-        // attempt to call
+    public static void main(String[] args) throws Exception {
+        System.out.println(Arrays.toString(args));
+        // either iterate here to create stubs of quotation services, passing them to broker
+        // or pass urls to broker to create quotation services
+        List<QuotationService> quotationServices = createQuotationStubs(Arrays.asList(args));
+        Endpoint.publish("http://localhost:9000/broker", new LocalBrokerService(quotationServices));
+        // the broker should receive a list of urls representing the locations of the quotation services
+        // in theory the quotation services should already be running
+        // perhaps when I instantiate the LocalBrokerService, I can pass the urls to the constructor
+        // and in the constructor create the quotation service stubs
+    }
+
+    private static List<QuotationService> createQuotationStubs(List<String> urls) throws Exception {
+        try {
+            List<QuotationService> quotationServices = new ArrayList<>();
+
+            for (String url : urls) {
+                URL wsdlUrl = new URL(url);
+                QName serviceName =
+                        new QName("http://core.service/", "QuotationService");
+                Service service = Service.create(wsdlUrl, serviceName);
+                QName portName =
+                        new QName("http://core.service/", "QuotationServicePort");
+                QuotationService quotationService =
+                        service.getPort(portName, QuotationService.class);
+                quotationServices.add(quotationService);
+                return quotationServices;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+        return Collections.emptyList();
     }
 }
