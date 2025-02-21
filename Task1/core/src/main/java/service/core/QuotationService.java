@@ -1,7 +1,9 @@
 package service.core;
 
-import javax.jws.WebMethod;
-import javax.jws.WebService;
+
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
+
 /**
  * Interface to define the behaviour of a quotation service.
  * 
