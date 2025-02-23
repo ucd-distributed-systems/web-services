@@ -1,0 +1,4 @@
+quotations:
+  auldfellas: "http://localhost:9001/quotations?wsdl"
+  dodgygeezers: "http://localhost:9002/quotations?wsdl"
+  girlsallowed: "http://localhost:9003/quotations?wsdl"

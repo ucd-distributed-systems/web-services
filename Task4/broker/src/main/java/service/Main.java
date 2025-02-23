@@ -15,7 +15,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        System.out.println("Main method running broker service");
+        System.out.println("Broker service initiated");
+        System.out.println(Arrays.toString(args));
         // either iterate here to create stubs of quotation services, passing them to broker
         // or pass urls to broker to create quotation services
         List<QuotationService> quotationServices = createQuotationStubs(Arrays.asList(args));
