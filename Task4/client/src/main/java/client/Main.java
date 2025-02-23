@@ -19,7 +19,6 @@ import javax.xml.namespace.QName;
 */
 
 public class Main {
-    private static BrokerService brokerService;
     /**
      * This is the starting point for the application. Here, we must
      * get a reference to the Broker Service and then invoke the
@@ -31,7 +30,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) throws Exception {
-        brokerService = createBrokerStub("http://localhost:9000/broker?wsdl");
+        BrokerService brokerService = createBrokerStub("http://0.0.0.0:9000/broker?wsdl");
 
         int numc = 0;
         for (ClientInfo info : clients) {

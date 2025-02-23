@@ -16,11 +16,9 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Broker service initiated");
-        System.out.println(Arrays.toString(args));
-        // either iterate here to create stubs of quotation services, passing them to broker
-        // or pass urls to broker to create quotation services
+
         List<QuotationService> quotationServices = createQuotationStubs(Arrays.asList(args));
-        Endpoint.publish("http://localhost:9000/broker", new LocalBrokerService(quotationServices));
+        Endpoint.publish("http://0.0.0.0:9000/broker", new LocalBrokerService(quotationServices));
         // the broker should receive a list of urls representing the locations of the quotation services
         // in theory the quotation services should already be running
         // perhaps when I instantiate the LocalBrokerService, I can pass the urls to the constructor
@@ -31,19 +29,26 @@ public class Main {
         List<QuotationService> quotationServices = new ArrayList<>();
 
         for (String url : urls) {
+            System.out.println("Quotation service url: " + url);
             // add try catch here and if there is an error, skip to next service
             try {
                 URL wsdlUrl = new URL(url);
+                System.out.println("WSDL url: " + wsdlUrl);
                 QName serviceName =
                         new QName("http://core.service/", "QuotationService");
+                System.out.println("Service name: " + serviceName);
                 Service service = Service.create(wsdlUrl, serviceName);
+                System.out.println("Service created: " + service);
                 QName portName =
                         new QName("http://core.service/", "QuotationServicePort");
+                System.out.println("Service port: " + portName);
                 QuotationService quotationService =
                         service.getPort(portName, QuotationService.class);
+                System.out.println("Quotation service: " + quotationService);
                 quotationServices.add(quotationService);
             } catch (Exception e) {
                 System.out.println("Failed to connect to quotation service at: " + url);
+                e.printStackTrace();
             }
         }
         return quotationServices;

@@ -12,10 +12,10 @@ services:
         - girlsallowed
   auldfellas:
     build: ./auldfellas
-    container_name: auldfellas-service
+    container_name: afq-service
   dodgygeezers:
     build: ./dodgygeezers
-    container_name: dodgygeezers-service
+    container_name: dgq-service
   girlsallowed:
     build: ./girlsallowed
-    container_name: girlsallowed-service
+    container_name: gaq-service

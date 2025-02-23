@@ -32,26 +32,7 @@ public class LocalBrokerService implements BrokerService {
     @Override
     public LinkedList<Quotation> getQuotations(ClientInfo info) throws Exception {
         LinkedList<Quotation> quotations = new LinkedList<Quotation>();
-        List<String> serviceURLs = new LinkedList<String>();
-        serviceURLs.add("http://0.0.0.0:9001/quotations?wsdl");
-        serviceURLs.add("http://0.0.0.0:9002/quotations?wsdl");
-        serviceURLs.add("http://0.0.0.0:9003/quotations?wsdl");
 
-//        for (String name : serviceURLs) {
-//            if (name.contains("quotations")) {
-//                // create quotation services
-//                // generation quotation
-//                URL wsdlUrl = new URL(name);
-//                QName serviceName =
-//                        new QName("http://core.service/", "QuotationService");
-//                Service service = Service.create(wsdlUrl, serviceName);
-//                QName portName =
-//                        new QName("http://core.service/", "QuotationServicePort");
-//                QuotationService quotationService =
-//                        service.getPort(portName, QuotationService.class);
-//                quotations.add(quotationService.generateQuotation(info));
-//            }
-//        }
         for (QuotationService quotationService : quotationServices) {
             quotations.add(quotationService.generateQuotation(info));
         }
