@@ -14,5 +14,5 @@ import java.util.LinkedList;
 @WebService
 public interface BrokerService {
 	@WebMethod
-	public LinkedList<Quotation> getQuotations(ClientInfo info) throws Exception;
+	LinkedList<Quotation> getQuotations(ClientInfo info) throws Exception;
 }

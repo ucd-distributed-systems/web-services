@@ -3,7 +3,6 @@ package client;
 import java.net.URL;
 import java.text.NumberFormat;
 
-import jakarta.xml.ws.Endpoint;
 import jakarta.xml.ws.Service;
 import service.core.BrokerService;
 import service.core.ClientInfo;
@@ -50,14 +49,21 @@ public class Main {
     }
 
     private static BrokerService createBrokerStub(String url) throws Exception {
-        URL wsdlUrl = new URL(url);
-        QName serviceName =
-                new QName("http://core.service/", "BrokerService");
-        Service service = Service.create(wsdlUrl, serviceName);
-        QName portName =
-                new QName("http://core.service/", "BrokerServicePort");
+        BrokerService brokerService = null;
+        try {
+            System.out.println("Creating broker stub");
+            URL wsdlUrl = new URL(url);
+            QName serviceName =
+                    new QName("http://core.service/", "BrokerService");
+            Service service = Service.create(wsdlUrl, serviceName);
+            QName portName =
+                    new QName("http://core.service/", "BrokerServicePort");
+            brokerService = service.getPort(portName, BrokerService.class);
+        } catch (Exception e) {
+            System.out.println("Unable to create broker stub from url: " + url);
+        }
 
-        return service.getPort(portName, BrokerService.class);
+        return brokerService;
     }
 
     /**

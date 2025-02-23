@@ -1,6 +1,8 @@
 package service.broker;
 
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,6 +29,7 @@ import javax.xml.namespace.QName;
 @SOAPBinding(style= SOAPBinding.Style.DOCUMENT, use= SOAPBinding.Use.LITERAL)
 public class LocalBrokerService implements BrokerService {
     private List<QuotationService> quotationServices;
+    private List<String> quotationUrls;
 
     @WebMethod
     @Override
@@ -42,7 +45,31 @@ public class LocalBrokerService implements BrokerService {
 
     public LocalBrokerService() {};
 
-    public LocalBrokerService(List<QuotationService> quotationServices) {
-        this.quotationServices = quotationServices;
+    public LocalBrokerService(List<String> quotationUrls) throws Exception {
+        this.quotationUrls = quotationUrls;
+        this.quotationServices = new LinkedList<>();
+        for (String url : quotationUrls) {
+            QuotationService quotationService = createQuotationStub(url);
+            System.out.println("Generated quotation service: " + quotationService);
+            this.quotationServices.add(quotationService);
+        }
+    }
+
+    private QuotationService createQuotationStub(String url) throws Exception {
+        QuotationService quotationService = null;
+        try {
+            URL wsdlUrl = new URL(url);
+            QName serviceName =
+                    new QName("http://core.service/", "QuotationService");
+            Service service = Service.create(wsdlUrl, serviceName);
+            QName portName =
+                    new QName("http://core.service/", "QuotationServicePort");
+            quotationService =
+                    service.getPort(portName, QuotationService.class);
+        } catch (Exception e) {
+            System.out.println("Unable to create quotation stub from url: " + url);
+        }
+
+        return quotationService;
     }
 }
