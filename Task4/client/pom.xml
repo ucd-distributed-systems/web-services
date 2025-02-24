@@ -33,23 +33,5 @@
             <artifactId>core</artifactId>
             <version>0.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>quoco-ws</groupId>
-            <artifactId>auldfellas</artifactId>
-            <version>0.0.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>quoco-ws</groupId>
-            <artifactId>broker</artifactId>
-            <version>0.0.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>quoco-ws</groupId>
-            <artifactId>dodgygeezers</artifactId>
-            <version>0.0.1</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 </project>

@@ -10,13 +10,6 @@ import service.core.Quotation;
 
 import javax.xml.namespace.QName;
 
-/* Docker structure
-- create images of all containers
-- port map the broker to the host machine so that the client can access
-- create a docker network between the broker and quotation services so they can interact
-- docker compose should create a network by default
-*/
-
 public class Main {
     /**
      * This is the starting point for the application. Here, we must
@@ -51,6 +44,7 @@ public class Main {
     private static BrokerService createBrokerStub(String url) throws Exception {
         BrokerService brokerService = null;
         try {
+            Thread.sleep(2500);
             System.out.println("Creating broker stub");
             URL wsdlUrl = new URL(url);
             QName serviceName =

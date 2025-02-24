@@ -19,7 +19,6 @@ public class BrokerServiceUnitTest {
     @BeforeAll
     public static void setup() {
         Endpoint.publish("http://0.0.0.0:9000/broker", new LocalBrokerService());
-        // could publish a quotation service - would change test because we would expect a quotation to return
     }
 
     // could change connection test to try catch because it is behaving as expected
@@ -33,7 +32,7 @@ public class BrokerServiceUnitTest {
                     "FirstName LastName", ClientInfo.FEMALE, 49,
                     1.5494, 80, false, false);
 
-            URL wsdlUrl = new URL("http://localhost:9000/broker?wsdl");
+            URL wsdlUrl = new URL("http://0.0.0.0:9000/broker?wsdl");
             QName serviceName =
                     new QName("http://core.service/", "BrokerService");
             Service service = Service.create(wsdlUrl, serviceName);

@@ -48,6 +48,8 @@ public class LocalBrokerService implements BrokerService {
     public LocalBrokerService(List<String> quotationUrls) throws Exception {
         this.quotationUrls = quotationUrls;
         this.quotationServices = new LinkedList<>();
+        // Thread.sleep() fixed issues creating other stubs, believe it gave them time to start running
+        Thread.sleep(2500);
         for (String url : quotationUrls) {
             QuotationService quotationService = createQuotationStub(url);
             System.out.println("Generated quotation service: " + quotationService);
@@ -58,14 +60,14 @@ public class LocalBrokerService implements BrokerService {
     private QuotationService createQuotationStub(String url) throws Exception {
         QuotationService quotationService = null;
         try {
-            URL wsdlUrl = new URL(url);
+            URL wsdlUrl = new URL(url); // wsdl is document representing service
             QName serviceName =
                     new QName("http://core.service/", "QuotationService");
             Service service = Service.create(wsdlUrl, serviceName);
             QName portName =
                     new QName("http://core.service/", "QuotationServicePort");
             quotationService =
-                    service.getPort(portName, QuotationService.class);
+                    service.getPort(portName, QuotationService.class); // generate stub
         } catch (Exception e) {
             System.out.println("Unable to create quotation stub from url: " + url);
         }
