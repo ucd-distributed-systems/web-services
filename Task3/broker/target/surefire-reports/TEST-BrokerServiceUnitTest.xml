@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="BrokerServiceUnitTest" time="0.308" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="BrokerServiceUnitTest" time="0.304" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/test-classes:/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/classes:/Users/ethanepperson/.m2/repository/quoco-ws/core/0.0.1/core-0.0.1.jar:/Users/ethanepperson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.3/junit-jupiter-api-5.11.3.jar:/Users/ethanepperson/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ethanepperson/.m2/repository/org/junit/platform/junit-platform-commons/1.11.3/junit-platform-commons-1.11.3.jar:/Users/ethanepperson/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.2/jakarta.xml.ws-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.2/jakarta.xml.soap-api-3.0.2.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/ws/jaxws-rt/4.0.3/jaxws-rt-4.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-impl-4.0.5.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/ethanepperson/.m2/repository/org/glassfish/ha/ha-api/3.1.13/ha-api-3.1.13.jar:/Users/ethanepperson/.m2/repository/org/glassfish/external/management-api/3.2.3/management-api-3.2.3.jar:/Users/ethanepperson/.m2/repository/org/glassfish/gmbal/gmbal-api-only/4.0.3/gmbal-api-only-4.0.3.jar:/Users/ethanepperson/.m2/repository/org/jvnet/staxex/stax-ex/2.1.0/stax-ex-2.1.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/stream/buffer/streambuffer/2.1.0/streambuffer-2.1.0.jar:/Users/ethanepperson/.m2/repository/org/jvnet/mimepull/mimepull/1.10.0/mimepull-1.10.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/2.1.1/FastInfoset-2.1.1.jar:/Users/ethanepperson/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.3/jakarta.mail-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-mail/2.0.3/angus-mail-2.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/3.0.4/saaj-impl-3.0.4.jar:/Users/ethanepperson/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.0.0/woodstox-core-7.0.0.jar:/Users/ethanepperson/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/Users/ethanepperson/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.3/log4j-slf4j2-impl-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/ethanepperson/.m2/repository/quoco-ws/auldfellas/0.0.1/auldfellas-0.0.1.jar:"/>
+    <property name="java.class.path" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/test-classes:/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/classes:/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/core/target/classes:/Users/ethanepperson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.3/junit-jupiter-api-5.11.3.jar:/Users/ethanepperson/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ethanepperson/.m2/repository/org/junit/platform/junit-platform-commons/1.11.3/junit-platform-commons-1.11.3.jar:/Users/ethanepperson/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.2/jakarta.xml.ws-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.2/jakarta.xml.soap-api-3.0.2.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/ws/jaxws-rt/4.0.3/jaxws-rt-4.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-impl-4.0.5.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/ethanepperson/.m2/repository/org/glassfish/ha/ha-api/3.1.13/ha-api-3.1.13.jar:/Users/ethanepperson/.m2/repository/org/glassfish/external/management-api/3.2.3/management-api-3.2.3.jar:/Users/ethanepperson/.m2/repository/org/glassfish/gmbal/gmbal-api-only/4.0.3/gmbal-api-only-4.0.3.jar:/Users/ethanepperson/.m2/repository/org/jvnet/staxex/stax-ex/2.1.0/stax-ex-2.1.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/stream/buffer/streambuffer/2.1.0/streambuffer-2.1.0.jar:/Users/ethanepperson/.m2/repository/org/jvnet/mimepull/mimepull/1.10.0/mimepull-1.10.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/2.1.1/FastInfoset-2.1.1.jar:/Users/ethanepperson/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.3/jakarta.mail-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-mail/2.0.3/angus-mail-2.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/3.0.4/saaj-impl-3.0.4.jar:/Users/ethanepperson/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.0.0/woodstox-core-7.0.0.jar:/Users/ethanepperson/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/Users/ethanepperson/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.3/log4j-slf4j2-impl-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/auldfellas/target/classes:"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
@@ -13,10 +13,10 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.0.6+7/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/surefire/surefirebooter-20250221150243194_3.jar /Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/surefire 2025-02-21T15-02-43_160-jvmRun1 surefire-20250221150243194_1tmp surefire_0-20250221150243194_2tmp"/>
+    <property name="sun.java.command" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/surefire/surefirebooter-20250224081113108_12.jar /Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/surefire 2025-02-24T08-11-10_106-jvmRun1 surefire-20250224081113108_10tmp surefire_3-20250224081113108_11tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/test-classes:/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/classes:/Users/ethanepperson/.m2/repository/quoco-ws/core/0.0.1/core-0.0.1.jar:/Users/ethanepperson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.3/junit-jupiter-api-5.11.3.jar:/Users/ethanepperson/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ethanepperson/.m2/repository/org/junit/platform/junit-platform-commons/1.11.3/junit-platform-commons-1.11.3.jar:/Users/ethanepperson/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.2/jakarta.xml.ws-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.2/jakarta.xml.soap-api-3.0.2.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/ws/jaxws-rt/4.0.3/jaxws-rt-4.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-impl-4.0.5.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/ethanepperson/.m2/repository/org/glassfish/ha/ha-api/3.1.13/ha-api-3.1.13.jar:/Users/ethanepperson/.m2/repository/org/glassfish/external/management-api/3.2.3/management-api-3.2.3.jar:/Users/ethanepperson/.m2/repository/org/glassfish/gmbal/gmbal-api-only/4.0.3/gmbal-api-only-4.0.3.jar:/Users/ethanepperson/.m2/repository/org/jvnet/staxex/stax-ex/2.1.0/stax-ex-2.1.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/stream/buffer/streambuffer/2.1.0/streambuffer-2.1.0.jar:/Users/ethanepperson/.m2/repository/org/jvnet/mimepull/mimepull/1.10.0/mimepull-1.10.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/2.1.1/FastInfoset-2.1.1.jar:/Users/ethanepperson/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.3/jakarta.mail-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-mail/2.0.3/angus-mail-2.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/3.0.4/saaj-impl-3.0.4.jar:/Users/ethanepperson/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.0.0/woodstox-core-7.0.0.jar:/Users/ethanepperson/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/Users/ethanepperson/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.3/log4j-slf4j2-impl-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/ethanepperson/.m2/repository/quoco-ws/auldfellas/0.0.1/auldfellas-0.0.1.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/test-classes:/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/classes:/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/core/target/classes:/Users/ethanepperson/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.3/junit-jupiter-api-5.11.3.jar:/Users/ethanepperson/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/ethanepperson/.m2/repository/org/junit/platform/junit-platform-commons/1.11.3/junit-platform-commons-1.11.3.jar:/Users/ethanepperson/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/ws/jakarta.xml.ws-api/4.0.2/jakarta.xml.ws-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.2/jakarta.xml.bind-api-4.0.2.jar:/Users/ethanepperson/.m2/repository/jakarta/xml/soap/jakarta.xml.soap-api/3.0.2/jakarta.xml.soap-api-3.0.2.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/ws/jaxws-rt/4.0.3/jaxws-rt-4.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-impl/4.0.5/jaxb-impl-4.0.5.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/bind/jaxb-core/4.0.5/jaxb-core-4.0.5.jar:/Users/ethanepperson/.m2/repository/org/glassfish/ha/ha-api/3.1.13/ha-api-3.1.13.jar:/Users/ethanepperson/.m2/repository/org/glassfish/external/management-api/3.2.3/management-api-3.2.3.jar:/Users/ethanepperson/.m2/repository/org/glassfish/gmbal/gmbal-api-only/4.0.3/gmbal-api-only-4.0.3.jar:/Users/ethanepperson/.m2/repository/org/jvnet/staxex/stax-ex/2.1.0/stax-ex-2.1.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/stream/buffer/streambuffer/2.1.0/streambuffer-2.1.0.jar:/Users/ethanepperson/.m2/repository/org/jvnet/mimepull/mimepull/1.10.0/mimepull-1.10.0.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/2.1.1/FastInfoset-2.1.1.jar:/Users/ethanepperson/.m2/repository/jakarta/mail/jakarta.mail-api/2.1.3/jakarta.mail-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-activation/2.0.2/angus-activation-2.0.2.jar:/Users/ethanepperson/.m2/repository/org/eclipse/angus/angus-mail/2.0.3/angus-mail-2.0.3.jar:/Users/ethanepperson/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/3.0.4/saaj-impl-3.0.4.jar:/Users/ethanepperson/.m2/repository/com/fasterxml/woodstox/woodstox-core/7.0.0/woodstox-core-7.0.0.jar:/Users/ethanepperson/.m2/repository/org/codehaus/woodstox/stax2-api/4.2.2/stax2-api-4.2.2.jar:/Users/ethanepperson/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.3/jakarta.activation-api-2.1.3.jar:/Users/ethanepperson/.m2/repository/jakarta/annotation/jakarta.annotation-api/3.0.0/jakarta.annotation-api-3.0.0.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-slf4j2-impl/2.24.3/log4j-slf4j2-impl-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-api/2.24.3/log4j-api-2.24.3.jar:/Users/ethanepperson/.m2/repository/org/slf4j/slf4j-api/2.0.16/slf4j-api-2.0.16.jar:/Users/ethanepperson/.m2/repository/org/apache/logging/log4j/log4j-core/2.24.3/log4j-core-2.24.3.jar:/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/auldfellas/target/classes:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/ethanepperson"/>
     <property name="user.language" value="en"/>
@@ -24,13 +24,13 @@
     <property name="java.version.date" value="2025-01-21"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-21.0.6+7/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker"/>
+    <property name="basedir" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker/target/surefire/surefirebooter-20250221150243194_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker/target/surefire/surefirebooter-20250224081113108_12.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.6+7-LTS"/>
@@ -46,7 +46,7 @@
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/f4/b9bgzsk90zl1dvqn_gpxg7mw0000gn/T/"/>
     <property name="java.version" value="21.0.6"/>
-    <property name="user.dir" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/quoco-ws/Task3/broker"/>
+    <property name="user.dir" value="/Users/ethanepperson/Desktop/spring2025/distributed/labs/25201495-ws/Task3/broker"/>
     <property name="os.arch" value="aarch64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="native.encoding" value="UTF-8"/>
@@ -59,25 +59,11 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="connectionTest" classname="BrokerServiceUnitTest" time="0.103">
-    <system-err><![CDATA[Feb 21, 2025 3:02:43 PM com.sun.xml.ws.server.sei.TieHandler createResponse
-SEVERE: Failed to access the WSDL at: http://0.0.0.0:9001/quotations?wsdl. It failed with: 
-	Connection refused.
-jakarta.xml.ws.WebServiceException: Failed to access the WSDL at: http://0.0.0.0:9001/quotations?wsdl. It failed with: 
-	Connection refused.
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.tryWithMex(RuntimeWSDLParser.java:235)
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:216)
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:179)
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:148)
-	at com.sun.xml.ws.client.WSServiceDelegate.parseWSDL(WSServiceDelegate.java:336)
-	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:293)
-	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:201)
-	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:182)
-	at com.sun.xml.ws.client.WSServiceDelegate.<init>(WSServiceDelegate.java:178)
-	at com.sun.xml.ws.spi.ProviderImpl.createServiceDelegate(ProviderImpl.java:89)
-	at jakarta.xml.ws.Service.<init>(Service.java:82)
-	at jakarta.xml.ws.Service.create(Service.java:735)
-	at service.broker.LocalBrokerService.getQuotations(LocalBrokerService.java:46)
+  <testcase name="connectionTest" classname="BrokerServiceUnitTest" time="0.115">
+    <system-err><![CDATA[Feb 24, 2025 8:11:13 AM com.sun.xml.ws.server.sei.TieHandler createResponse
+SEVERE: Cannot invoke "java.util.List.iterator()" because "this.quotationServices" is null
+java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.quotationServices" is null
+	at service.broker.LocalBrokerService.getQuotations(LocalBrokerService.java:55)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at com.sun.xml.ws.util.Trampoline.invoke(MethodUtil.java:52)
@@ -106,30 +92,6 @@ jakarta.xml.ws.WebServiceException: Failed to access the WSDL at: http://0.0.0.0
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.net.ConnectException: Connection refused
-	at java.base/sun.nio.ch.Net.connect0(Native Method)
-	at java.base/sun.nio.ch.Net.connect(Net.java:589)
-	at java.base/sun.nio.ch.Net.connect(Net.java:578)
-	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583)
-	at java.base/java.net.Socket.connect(Socket.java:751)
-	at java.base/java.net.Socket.connect(Socket.java:686)
-	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
-	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
-	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:280)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:386)
-	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:408)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1319)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1252)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1138)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1067)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690)
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
-	at java.base/java.net.URL.openStream(URL.java:1325)
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.createReader(RuntimeWSDLParser.java:966)
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.resolveWSDL(RuntimeWSDLParser.java:367)
-	at com.sun.xml.ws.wsdl.parser.RuntimeWSDLParser.parse(RuntimeWSDLParser.java:201)
-	... 39 more
 
 ]]></system-err>
   </testcase>

@@ -62,4 +62,6 @@ public class LocalBrokerService implements BrokerService {
     public LocalBrokerService(List<QuotationService> quotationServices) {
         this.quotationServices = quotationServices;
     }
+
+    public LocalBrokerService() {}
 }
