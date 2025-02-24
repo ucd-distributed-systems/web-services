@@ -1,8 +1,9 @@
 package service.core;
 
+import jakarta.jws.WebMethod;
+import jakarta.jws.WebService;
+
 import java.util.List;
-import javax.jws.WebMethod;
-import javax.jws.WebService;
 
 /**
  * Interface for defining the behaviours of the broker service
